@@ -1,0 +1,58 @@
+[
+  {
+    "day": "monday",
+    "meal_type": "breakfast",
+    "preparation": "cooked",
+    "time_eating": "rushed",
+    "drink": "water",
+    "enjoyment_level": "enjoyed"
+  },
+  {
+    "day": "tuesday",
+    "meal_type": "lunch",
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "diet coke",
+    "enjoyment_level": "didn't enjoy"
+  },
+  {
+    "day": "wednesday",
+    "meal_type": "dinner",
+    "preparation": "leftovers",
+    "time_eating": "",
+    "drink": "chai latte",
+    "enjoyment_level": ""
+  },
+  {
+    "day": "thursday",
+    "meal_type": "dessert",
+    "preparation": "snack",
+    "time_eating": "",
+    "drink": "",
+    "enjoyment_level": ""
+  },
+  {
+    "day": "friday",
+    "meal_type": "",
+    "preparation": "",
+    "time_eating": "",
+    "drink": "",
+    "enjoyment_level": ""
+  },
+  {
+    "day": "saturday",
+    "meal_type": "",
+    "preparation": "",
+    "time_eating": "",
+    "drink": "",
+    "enjoyment_level": ""
+  },
+  {
+    "day": "sunday",
+    "meal_type": "",
+    "preparation": "",
+    "time_eating": "",
+    "drink": "",
+    "enjoyment_level": ""
+  }
+]
