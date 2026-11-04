@@ -64,9 +64,8 @@ function drawMealType(type, x, y) {
 
   push();
   translate(x, y);
-  stroke(0);
-  strokeWeight(1);
-  noFill();
+  noStroke();
+  fill(0);
 
   for (let i = 0; i < count; i++) {
     push();
