@@ -5,54 +5,150 @@
     "preparation": "cooked",
     "time_eating": "rushed",
     "drink": "water",
-    "enjoyment_level": "enjoyed"
+    "enjoyment_level": "medium"
   },
   {
     "day": "tuesday",
     "meal_type": "lunch",
-    "preparation": "didn't cook",
+    "preparation": "dining hall",
     "time_eating": "didn't rush",
     "drink": "diet coke",
-    "enjoyment_level": "didn't enjoy"
+    "enjoyment_level": "medium"
+  },
+  {
+    "day": "tuesday",
+    "meal_type": "dinner",
+    "preparation": "leftovers",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "medium"
   },
   {
     "day": "wednesday",
     "meal_type": "dinner",
-    "preparation": "leftovers",
-    "time_eating": "",
+    "preparation": "cooked",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "friday",
+    "meal_type": "breakfast",
+    "preparation": "cooked",
+    "time_eating": "rushed",
     "drink": "chai latte",
-    "enjoyment_level": ""
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "saturday",
+    "meal_type": "breakfast",
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "saturday",
+    "meal_type": "dinner",
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "diet coke",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "friday ",
+    "meal_type": "lunch",
+    "preparation": "snack",
+    "time_eating": "rushed",
+    "drink": "diet coke",
+    "enjoyment_level": "low"
+  },
+  {
+    "day": "monday",
+    "meal_type": "dessert",
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "wednesday",
+    "meal_type": "lunch",
+    "preparation": "snack",
+    "time_eating": "rushed",
+    "drink": "water",
+    "enjoyment_level": "medium"
+  },
+  {
+    "day": "wednesday",
+    "meal_type": "breakfast",
+    "preparation": "cooked",
+    "time_eating": "didn't rush",
+    "drink": "chai latte",
+    "enjoyment_level": "medium"
+  },
+  {
+    "day": "friday",
+    "meal_type": "dinner",
+    "preparation": "cooked",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "saturday",
+    "meal_type": "lunch",
+    "preparation": "snack",
+    "time_eating": "didn't rush",
+    "drink": "diet coke",
+    "enjoyment_level": "low"
+  },
+  {
+    "day": "tuesday",
+    "meal_type": "dessert",
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "sunday",
+    "meal_type": "breakfast",
+    "preparation": "cooked",
+    "time_eating": "didn't rush",
+    "drink": "chai latte",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "sunday",
+    "meal_type": "dinner",
+    "preparation": "leftovers",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
+  },
+  {
+    "day": "thursday",
+    "meal_type": "dinner",
+    "preparation": "leftovers",
+    "time_eating": "rushed",
+    "drink": "water",
+    "enjoyment_level": "medium"
+  },
+  {
+    "day": "thursday",
+    "meal_type": "breakfast",
+    "preparation": "didn't cook",
+    "time_eating": "rushed",
+    "drink": "chai latte",
+    "enjoyment_level": "medium"
   },
   {
     "day": "thursday",
     "meal_type": "dessert",
-    "preparation": "snack",
-    "time_eating": "",
-    "drink": "",
-    "enjoyment_level": ""
-  },
-  {
-    "day": "friday",
-    "meal_type": "",
-    "preparation": "",
-    "time_eating": "",
-    "drink": "",
-    "enjoyment_level": ""
-  },
-  {
-    "day": "saturday",
-    "meal_type": "",
-    "preparation": "",
-    "time_eating": "",
-    "drink": "",
-    "enjoyment_level": ""
-  },
-  {
-    "day": "sunday",
-    "meal_type": "",
-    "preparation": "",
-    "time_eating": "",
-    "drink": "",
-    "enjoyment_level": ""
+    "preparation": "didn't cook",
+    "time_eating": "didn't rush",
+    "drink": "water",
+    "enjoyment_level": "high"
   }
 ]

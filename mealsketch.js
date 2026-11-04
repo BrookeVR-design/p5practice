@@ -1,63 +1,104 @@
-let myData
+let myData;
+
 async function setup() {
-    createCanvas(1000,400);
-    // Load data
-    myData = await loadJSON('data.json');
-    console.log(myData);
+  createCanvas(1000, 400);
+  myData = await loadJSON('data.json');
+  console.log(myData);
 }
 
 function draw() {
-    background(220);
+  if (!myData) return;
 
-    for(let i=0; i < myData.length; i++) {
-        let meal = myData[i]
-        let x = (i+1) * 100
-        let y
-        if (meal.type === 'breakfast') {
-            y = height - height * 0.1;
-        } else if (meal.type === 'lunch') {
-            y = height - height * 0.75;
-        } else if (meal.type === 'dinner') {
-            y = height - height * 0.5;
-        }
-        else if (meal.type === 'dessert') {
-            y = height - height * .25;
-        }
-        //circle(x, y, 50);
-        if (meal.preparation === "cooked") {
-            fill(0);
-            circle(x, y, 50);
-        }
-        if (meal.preparation === "leftovers") {
-            fill (0)
-            arc(x, y, 50, 50, 0, PI);
-        }
-        if (meal.preparation === "dining hall") {
-            fill(0);
-            rect(x-25, y-25, 50, 50);
-        }
-        if (meal.preparation === "snack") {
-            fill(0);
-            triangle(x-25, y-25, x+25, y-25, x, y+25);
-        }
+  background(220);
+  noStroke();
+
+  for (let i = 0; i < myData.length; i++) {
+    let meal = myData[i];
+    let x = (i + 1) * 100;
+    let y = height / 2;
+
+    if (!meal.meal_type) {
+      continue;
     }
+
+    drawMealType(meal.meal_type, x, y);
+
+    if (meal.preparation === 'cooked') {
+      fill('#807DFF');
+      circle(x, y, 30);
+    } else if (meal.preparation === "didn't cook") {
+      fill('#F08DDC');
+      rect(x - 15, y - 15, 30, 30);
+    } else if (meal.preparation === 'leftovers') {
+      fill('#FFA16E');
+      arc(x, y, 30, 30, 0, PI);
+    } else if (meal.preparation === 'dining hall') {
+      fill('#E8CF58');
+      rect(x - 15, y - 15, 30, 30);
+    } else if (meal.preparation === 'snack') {
+      fill('#C4FFB3');
+      triangle(x - 15, y - 15, x + 15, y - 15, x, y + 15);
+    }
+
+    if (meal.drink) {
+      stroke(0);
+      strokeWeight(2);
+      line(x, y + 20, x, y + 55);
+      drawDrink(meal.drink, x, y + 60);
+    }
+  }
 }
-function drawDrink(drink) {
-    if(drink === "water") {
-        fill (0)
-        circle(0, 0, 20)
-    }
-    else if(drink === "diet coke") {
-        fill(0)
-        square(0,0,20)
-    }
-    else if(drink === "chai latte") {
-        fill(0)
-        triangle(0, 0, 20, 20, 20, 0)
-    }
-    let gap = slice * 0.3
-    let pie 
-    line(0,0, 20, 0)
-    
-        
+
+function drawMealType(type, x, y) {
+  const counts = {
+    breakfast: 3,
+    lunch: 4,
+    dinner: 6,
+    dessert: 7
+  };
+
+  const count = counts[type] || 3;
+  const radius = 35;
+  const w = 10;
+  const h = 28;
+
+  push();
+  translate(x, y);
+  stroke(0);
+  strokeWeight(1);
+  noFill();
+
+  for (let i = 0; i < count; i++) {
+    push();
+    rotate((TWO_PI / count) * i + frameCount * 0.02);
+    translate(0, -radius);
+    rectMode(CENTER);
+    rect(0, 0, w, h);
+    pop();
+  }
+
+  pop();
 }
+
+function drawDrink(drink, x, y) {
+  if (!drink) return;
+
+  push();
+  translate(x, y);
+  stroke(0);
+  strokeWeight(2);
+
+  if (drink === 'water') {
+    fill(255);
+    circle(0, 0, 20);
+  } else if (drink === 'diet coke') {
+    fill(255);
+    square(0, 0, 20);
+  } else if (drink === 'chai latte') {
+    fill(255);
+    triangle(0, 0, 20, 20, 20, 0);
+  }
+
+  pop();
+}
+
